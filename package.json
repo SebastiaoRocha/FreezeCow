@@ -1,0 +1,25 @@
+{
+  "name": "freezecow",
+  "version": "1.0.0",
+  "description": "Repositório de conclusão curso Senai",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebastiaoRocha/FreezeCow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebastiaoRocha/FreezeCow/issues"
+  },
+  "homepage": "https://github.com/SebastiaoRocha/FreezeCow#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "sequelize": "^6.37.7"
+  }
+}
