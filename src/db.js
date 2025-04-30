@@ -1,7 +1,8 @@
 const sequelize = require('sequelize');
 
 const database = new sequelize('BdTeste', 'userteste', 'positivo3221', {
-        host: '10.0.0.193',
+        host: 'fe80::a16d:5c15:f42d:4690',
+        port: 1433,
         dialect:'mssql'
     });
 database.sync();
