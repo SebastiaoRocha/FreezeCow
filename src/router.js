@@ -1,17 +1,13 @@
 const express = require('express');
-const controllerUsuario = require('./controllers/UsuarioController');
+const controllerColaborador = require('./controllers/colaboradorController');
 
 const routes = express.Router();
 
-routes.get('/List', controllerUsuario.List);
-
-routes.post('/Create', controllerUsuario.Create);
-
-routes.post('/Update', controllerUsuario.Update);
-
-routes.get('/GetOne', controllerUsuario.GetOne);
-
-routes.post('/Delete', controllerUsuario.Delete);
+// Rotas para classe Colaborador
+routes.post('/CreateColaborador', controllerColaborador.CreateColaborador);
+routes.get('/GetOneColaborador', controllerColaborador.GetOneColaborador);
+routes.post('/UpdateColaborador', controllerColaborador.UpdateColaborador);
+routes.post('/DeleteColaborador', controllerColaborador.DeleteColaborador);
 
 module.exports = routes;
 
