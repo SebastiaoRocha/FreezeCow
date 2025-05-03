@@ -38,7 +38,7 @@ Colaborador.init(
         }
     },
     {
-        sequelize : database, modelName: 'Colaboradores', shema
+        sequelize : database, modelName: 'Colaboradores', shema, timestamps: false
     }
 )
 
