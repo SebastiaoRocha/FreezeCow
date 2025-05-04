@@ -2,44 +2,44 @@ const sequelize = require('sequelize');
 const database = require('../db');
 const shema = "";
 
-class Colaborador extends sequelize.Model{}
+class Cliente extends sequelize.Model{}
 
-Colaborador.init(
+Cliente.init(
     {
-        ID_Colaborador:
+        ID_Cliente:
         {
             type: sequelize.INTEGER,
             autoIncrement: true,
-            primaryKey: true,
+            primaryKey: true
         },
         ID_FK_Unidade:
         {
             type: sequelize.INTEGER,
-            allowNull: false    
+            allowNull: false
         },
-        nome_Colaborador:
+        nome_Cliente:
         {
             type: sequelize.STRING,
             allowNull: false
         },
-        cargoColaborador:
+        cpf_Cliente:
         {
             type: sequelize.STRING,
             allowNull: false
         },
-        nivel_Acesso_Colaborador:
+        endereco_Cliente:
         {
-            type: sequelize.INTEGER,
+            type: sequelize.STRING,
             allowNull: false
         },
-        telefone_Colaborador:
+        telefone_Cliente:
         {
             type: sequelize.STRING
         }
     },
     {
-        sequelize : database, modelName: 'Colaboradores', shema, timestamps: false
+        sequelize: database, modelName: 'Clientes', shema, timestamps: false 
     }
 );
 
-module.exports = Colaborador;
+module.exports = Cliente;
